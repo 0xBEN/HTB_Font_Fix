@@ -52,6 +52,6 @@ Tampermonkey script to fix the Neue Haas Unica font for Linux-based Chromium bro
 </p>
 
 # Why this Works
-- Tampermonkey injects a CSS rule for the `.tk-neue-haas-unica, .theme--dark.v-application` CSS selector.
-- The `text-rendering: geometricPrecision !important` rule overrides the `html` selector default of `text-rendering: optimizeLegibility`
+- Tampermonkey injects a `text-rendering` rule for **_any_** CSS selector.
+- The `text-rendering: geometricPrecision !important` rule overrides the site default of `text-rendering: optimizeLegibility`
 - The `geometricPrecision` rule tells the browser to apply the font on the page precisely as the glyphs appear in the font files 
