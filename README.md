@@ -24,14 +24,32 @@ Tampermonkey script to fix the Neue Haas Unica font for Linux-based Chromium bro
 (function() {
     'use strict';
 
+    /*
+        Use * catch-all, because using html or
+        specific class selectors becomes a game of whack-a-mole
+    */
     GM_addStyle(`
-        .tk-neue-haas-unica,
-        .theme--dark.v-application {
+        * {
             text-rendering: geometricPrecision !important;
         }
     `);
 })();
 ```
+
+# Before / After
+**Before**
+<br>
+<img width="1102" height="199" alt="image" src="https://github.com/user-attachments/assets/22e34c9d-f58a-4f69-aaa0-90825ee7824e" />
+
+**After**
+<br>
+<img width="1127" height="211" alt="image" src="https://github.com/user-attachments/assets/1ee7e994-1d4e-45f3-b693-43c4a9b6e248" />
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e782ffc7-392d-4d4e-bfd7-473f06d16aa6" width="100%" style="max-width: 100%; height: auto;" />
+  <br>
+  <em style="font-style: italic; font-family: sans-serif;">Tampermonkey extension shows user script was successfully run.</em>
+</p>
 
 # Why this Works
 - Tampermonkey injects a CSS rule for the `.tk-neue-haas-unica, .theme--dark.v-application` CSS selector.
