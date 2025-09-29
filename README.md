@@ -51,7 +51,7 @@ Tampermonkey script to fix the Neue Haas Unica font for Linux-based Chromium bro
   <em style="font-style: italic; font-family: sans-serif;">Tampermonkey extension shows user script was successfully run.</em>
 </p>
 
-# Why this Works
+# Why This Works
 - Tampermonkey injects a `text-rendering` rule for **_any_** CSS selector.
 - The `text-rendering: geometricPrecision !important` rule overrides the site default of `text-rendering: optimizeLegibility`
 - The `geometricPrecision` rule tells the browser to apply the font on the page precisely as the glyphs appear in the font files 
