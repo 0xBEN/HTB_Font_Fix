@@ -46,7 +46,7 @@ Tampermonkey script to fix the Neue Haas Unica font for Linux-based Chromium bro
 <img width="1127" height="211" alt="image" src="https://github.com/user-attachments/assets/1ee7e994-1d4e-45f3-b693-43c4a9b6e248" />
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e782ffc7-392d-4d4e-bfd7-473f06d16aa6" width="100%" style="max-width: 100%; height: auto;" />
+  <img src="https://github.com/user-attachments/assets/b9f4d39f-3224-4653-9ea6-04b20146f54a" width="100%" style="max-width: 100%; height: auto;" />
   <br>
   <em style="font-style: italic; font-family: sans-serif;">Tampermonkey extension shows user script was successfully run.</em>
 </p>
